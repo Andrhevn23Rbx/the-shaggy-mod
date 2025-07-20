@@ -18,11 +18,18 @@ jobs:
         with:
           haxe-version: 4.3.4
 
-      - name: Install Haxelib
+      - name: Install Haxelib and Haxe Tools
         run: |
-          haxelib setup C:/haxelib
-          haxelib install hxcpp > /dev/null --quiet
-          .\"setup/windows.bat"
+          mkdir C:\haxelib
+          haxelib setup C:\haxelib
+          haxelib install hxcpp > NUL
+          haxelib install lime > NUL
+          haxelib install openfl > NUL
+          haxelib install actuate > NUL
+          haxelib install format > NUL
+          haxelib install hxp > NUL
+          haxelib run lime setup -y
+          .\setup\windows.bat
         shell: cmd
 
       - name: Skip SScript setup mode
