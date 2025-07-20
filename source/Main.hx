@@ -23,7 +23,7 @@ class Main extends Sprite
 	public static var menuBad:Bool = false;
 	public static var menuMusPlay:Bool = false;
 	public static var skipDes:Bool = false;
-	public static var ammo:Array<Int> = [4, 6, 7, 9];
+	public static var ammo:Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
 	public static var gfxIndex:Array<Dynamic> = [
 		[0, 1, 2, 3],
 		[0, 2, 3, 5, 1, 8],
